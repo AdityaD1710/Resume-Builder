@@ -13,7 +13,7 @@ import os
 class ResumeGenerator:
     def __init__(self):
         self.model = ChatGroq(model="llama3-groq-70b-8192-tool-use-preview", 
-                            api_key="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")
+                            api_key="{{ $API_KEY }}")
         self.parser = StrOutputParser()
         self.styles = self._create_styles()
     
